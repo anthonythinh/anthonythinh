@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @anthonythinh
+- 👋 Hi, I’m @anthonythinh (Trần An Thịnh)
 - 👀 I’m interested in learning code abou HTML and CSS .generally I likes to make websites for my life
 - 🌱 I’m currently learning programming language about websites and my channel
 - 💞️ I’m looking to collaborate on my websites and channel .Moreover,I would like to be be a proffesional web designer about programming language.
