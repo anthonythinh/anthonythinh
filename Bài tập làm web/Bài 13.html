@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cho phép người dùng điền thông tin vào Đăng ký du lịch</title>
+</head>
+<body>
+	<h1 style="color:blue;font-size:50px" align="center">Đăng ký du lịch</h1>
+	<br><br>
+	<table border="2px" style="border-radius: 4px;border-collapse: collapse;border-color: skyblue;border-style:double;background-color:lightyellow" align="center">
+		<tr>
+		<td style="color: skyblue;font-size: 20px;">Họ và tên:</td>
+		<td>
+			<form action="/action_page.php">
+				<label for="full_name"></label>
+				<input type="text" name="full_name" id="full_name" value="Phạm Ngọc Cẩm Đào" placeholder="Input your full name here">
+		</form>
+	</td>
+</tr>
+<tr>
+	<td style="color:skyblue;font-size:20px">Địa chỉ:</td>
+	<td>
+	<form action="/action_page.php">
+		<label for="address"></label>
+		<input type="text" name="address" id="address" value="227 Nguyễn Văn Cừ" placeholder="Input your address here">
+	</form>
+</td>
+</tr>
+<tr>
+	<td style="color:skyblue;font-size:20px">Điện thoại:</td>
+	<td>
+		<form action="/action_page.php">
+			<label for="tel_number"></label>
+			<input type="text" name="tel_number" id="tel_number" value="8351056" placeholder="Input your telephone number here" maxlength="10">
+		</form>
+	</td>
+	<tr>
+		<td style="color:skyblue;font-size:20px">Khách Việt Nam</td>
+		<td>
+			<form action="/action_page.php">
+				<input type="checkbox" name="tour" id="tour" checked>
+				
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td style="color:skyblue;font-size:20px">Chọn tour</td>
+		<td>
+			<form action="/action_page.php">
+				<select for="transportation">
+					<option value="Nha Trang">Nha Trang-Khánh Hòa</option>
+					<option value="Ha Noi">Hà Nội</option>
+					<option value="Gia Lai" selected>Buôn Mê Thuột - Gia Lai - Kon Tum</option>
+					<option value="Phu Yen">Phú Yên-Phan Thiết-Bình Thuận</option>
+					<option value="Hai Phong">Hải Phòng</option>
+				</select>
+				
+			</form>
+		</td>
+	</tr>
+	<tr>
+	<td style="color:skyblue;font-size:20px">Phương tiện</td>
+	<td>
+		<form action="/action_page.php">
+			<label for="tour"></label>
+			<input type="radio" name="plane" id="plane">Máy bay
+			<input type="radio" name="Car" id="Car" checked>Xe ô tô
+		</form>
+			
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<fieldset>
+			<legend style="color:orange;font-size:20px">Số lượng đoàn khách</legend>
+			<label for="adult" style="color:skyblue;font-size:20px">Người lớn</label>
+			<input type="text" name="adult" id="adult" value="6" maxlength="3">
+			<label for="children" style="color:skyblue;font-size:20px">Trẻ em</label>
+			<input type="text" name="kids" id="kids" value="4" maxlength="3">
+		</fieldset>
+	</td>
+</tr>
+<tr>
+	<td style="color:skyblue;font-size:20px">Ghi chú thêm</td>
+	<td colspan="2">
+		<form action="/action_page.php">
+			<textarea size="2" width="500px" height="500px">
+				Có 2 trẻ em dưới 6 tuổi
+				Có 2 người ăn chay
+				
+			</textarea>
+			
+		</form>
+	</td>
+</tr>
+<tr >
+	<td colspan="2" align="center">
+	<form>
+		<button type="Submit" id="submit" onclick="alert('Bạn đã đăng ký thành công')">Đồng ý</button>
+		<button type="reset" id="reset">Đặt lại</button>
+	</form>
+
+</td>
+</tr>
+</tr>
+</table>
+
+
+
+
+</body>
+</html>

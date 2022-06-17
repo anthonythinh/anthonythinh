@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Phiếu đăng ký tham gia chương trình khuyến mãi</title>
+</head>
+<body>
+	<h1 style="color:green;font-size:50px;" align="center" >Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+	<br>
+	<table border="2px" style="border-radius:4px;border-collapse:collapse;border-color:green;background-color: #87CEFA;border-spacing: 5px;padding: 25px;" align="center">
+		<tr>
+			<td style="color:green;font-size:20px" align="left">Họ và tên:</td>
+			<td style="width:100px;">
+				<form action="/action_page.php">
+					<label for="first_name"></label>
+					<input type="text" id="first_name" name="first_name" value="Nguyễn Ngọc Huỳnh Nga" placeholder="Nhập tên của bạn ở đây">
+					
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td style="color:green;font-size:20px" align="left">Địa chỉ</td>
+			<td>
+				<form action="/action_page.php">
+					<label for="address"></label>
+					<input type="text" name="address" id="address" value="2BiaHungVuong,Quan 10" placeholder="Nhập địa chỉ của bạn ở đây">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td style="color:green;font-size: 20px" align="left">Điện thoại</td>
+			<td>
+				<form action="/action.page.php">
+				<label for="telephone_number"></label>
+				<input type="text" name="telephone_number" id="telephone_number" value="0909097506" placeholder="Nhập số điện thoại của bạn" maxlength="8">
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<td style="color:green;font-size:20px" align="left">Phái</td>
+			<td>
+				<form action="/action_page.php">
+					<label for="gender"></label>
+					<input type="radio" name="sex" id="Male">Nam
+					<input type="radio" name="sex" id="Female" checked>Nữ
+					
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td style="color:green;font-size:20px" align="left">Nghề nghiệp</td>
+			<td>
+				<form action="/action_page.php">
+					<select id="occupation">
+						<option value="teacher" selected>Giáo viên</option>
+							<option value="Doctor">Bác sĩ</option>
+							<option value="Worker">Công nhân</option>
+							<option value="Engineering">Kĩ sư</option>
+							<option value="Architecture">Kiến trúc</option>
+							<option value="Lawyer">Luật sư</option>
+					</select>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td style="color:green;font-size:20px" align="left">Chọn sản phẩm tham gia</td>
+			<td>
+				<form action="/action_page.php">
+					<select id="accessories" multiple size="4">
+						<option value="Toothpaste" selected>Kem đánh răng</option>
+						<option value="Powder">Bột giặt</option>
+						<option value="Head and shoulder" selected>Dầu gội đầu</option>
+						<option value="Milk bath">Sữa tắm</option>
+
+						
+					</select>
+					
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td style="color:green;font-size:20px">Số người dự đoán tham gia </td>
+			<td>
+				<form action="/action_page.php">
+					<input type="number" name="number" id="number" value="250000" placeholder="Số người tham gia giải" maxlength="10">
+					
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+				<form action="/action_page.php">
+					<button type="submit" id="submit">Đồng ý</button>
+					<button type="reset" id="reset">Đặt lại</button>
+					
+				</form>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
